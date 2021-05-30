@@ -1,0 +1,15 @@
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.csproj.AssemblyReference.cache
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.AssemblyInfoInputs.cache
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.AssemblyInfo.cs
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.csproj.CoreCompileInputs.cache
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/Services.Contracts.deps.json
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/Services.Contracts.dll
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/ref/Services.Contracts.dll
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/Services.Contracts.pdb
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/Entities.dll
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/bin/Debug/net5.0/Entities.pdb
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.csproj.CopyComplete
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.dll
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/ref/Services.Contracts.dll
+/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/Debug/net5.0/Services.Contracts.pdb

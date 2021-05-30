@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {}
+  },
+  "projects": {
+    "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+        "packagesPath": "/home/davidlopez/.nuget/packages/",
+        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+        "projectName": "EjemploASP",
+        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+        "packagesPath": "/home/davidlopez/.nuget/packages/",
+        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              },
+              "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "packagesPath": "/home/davidlopez/.nuget/packages/",
+        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+        "projectName": "Services.Contracts",
+        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+        "packagesPath": "/home/davidlopez/.nuget/packages/",
+        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+        "projectName": "Services.Implementation",
+        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+        "packagesPath": "/home/davidlopez/.nuget/packages/",
+        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj"
+              },
+              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              },
+              "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
+                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
