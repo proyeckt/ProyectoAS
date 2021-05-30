@@ -1,0 +1,23 @@
+PEDIDO
+Int IdCliente
+String MetodoPago
+Int codigoFactura
+List<Producto> Productos
+
+PRODUCTO
+List<Item> items
+String nombre;
+Double precio;
+
+
+INVENTARIO
+IdItem
+idCantidad
+
+
+ITEM
+IdItem
+String Nombre
+
+
+
