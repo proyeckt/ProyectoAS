@@ -1,0 +1,35 @@
+PEDIDO
+Int IdCliente
+String MetodoPago
+List<Producto> Productos
+Double Precio
+
+PRODUCTO
+List<Item> items
+String nombre;
+Double precio;
+
+
+INVENTARIO
+IdItem
+idCantidad
+
+
+ITEM
+IdItem
+String Nombre
+
+PAGO
+Factura
+
+
+
+
+
+TARJETA
+id
+numeroTarjeta
+fechaExpiracion
+CVV
+
+

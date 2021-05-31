@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Entities >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/davidlopez/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+      "projectName": "Services.Contracts",
+      "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+      "packagesPath": "/home/davidlopez/.nuget/packages/",
+      "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+              "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

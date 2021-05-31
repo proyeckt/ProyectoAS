@@ -1,0 +1,22 @@
+﻿@model Usuario
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post" asp-controller="loginController" asp-action="login">
+    <table border="0" cellpadding="2" cellspacing="2">
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="Email" placeholder="Email" required autofocus></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password" placeholder="Clave" required></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" value="Login"></td>
+        </tr>
+    </table>
+</form>

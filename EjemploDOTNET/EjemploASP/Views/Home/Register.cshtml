@@ -1,0 +1,42 @@
+﻿@model Usuario
+
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+@section Scripts {
+<script type="text/javascript" src="~/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="~/js/jquery.validate.unobtrusive.min.js"></script>
+}
+
+@using (Html.BeginForm("Register", "LoginController", "Post"))
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Ingreso al sistema</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+        <p>
+            <input type="submit" value="Register" />
+        </p>
+    </fieldset>
+}
