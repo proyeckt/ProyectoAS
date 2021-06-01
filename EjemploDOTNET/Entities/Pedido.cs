@@ -15,6 +15,7 @@ namespace Entities
         public string MetodoPago { get; set; }
         public ICollection<Producto> Productos { get; set; }
         public double Precio { get; set; }
+        
 
         //public DateTime EnrollmentDate { get; set; }
 
