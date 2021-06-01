@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/takina/Implementaciones/EjemploASP/EjemploASP.csproj",
+  "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,53 +15619,63 @@
   "RootNamespace": "EjemploASP",
   "Documents": [
     {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Login/Bienvenido.cshtml",
-      "TargetPath": "Views\\Login\\Bienvenido.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Home/Index copy.cshtml",
-      "TargetPath": "Views\\Home\\Index copy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Login/Error.cshtml",
-      "TargetPath": "Views\\Login\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Shared/_Layout.cshtml",
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/_ViewStart.cshtml",
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Home/Index copy.cshtml",
+      "TargetPath": "Views\\Home\\Index copy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/CheckOut/Billing.cshtml",
+      "TargetPath": "Views\\CheckOut\\Billing.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Login/Error.cshtml",
+      "TargetPath": "Views\\Login\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/takina/Implementaciones/EjemploASP/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Login/Bienvenido.cshtml",
+      "TargetPath": "Views\\Login\\Bienvenido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Login/Billing.cshtml",
+      "TargetPath": "Views\\Login\\Billing.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

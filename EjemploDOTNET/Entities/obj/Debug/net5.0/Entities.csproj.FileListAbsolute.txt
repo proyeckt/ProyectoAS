@@ -10,3 +10,15 @@
 /home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/Debug/net5.0/ref/Entities.dll
 /home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.pdb
 /home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.csproj.AssemblyReference.cache
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/bin/Debug/net5.0/Entities.deps.json
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/bin/Debug/net5.0/Entities.dll
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/bin/Debug/net5.0/ref/Entities.dll
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/bin/Debug/net5.0/Entities.pdb
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.csproj.AssemblyReference.cache
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.AssemblyInfoInputs.cache
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.AssemblyInfo.cs
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.csproj.CoreCompileInputs.cache
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.dll
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/ref/Entities.dll
+/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.pdb

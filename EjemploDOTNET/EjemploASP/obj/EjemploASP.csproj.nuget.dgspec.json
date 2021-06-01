@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {}
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {}
   },
   "projects": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
               }
             }
           }
@@ -66,18 +66,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
         "projectName": "EjemploASP",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -92,11 +92,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
               },
-              "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
               }
             }
           }
@@ -128,18 +128,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -180,18 +180,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
         "projectName": "Services.Contracts",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -206,8 +206,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
               }
             }
           }
@@ -236,18 +236,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
         "projectName": "Services.Implementation",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -262,14 +262,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj"
               },
-              "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
               },
-              "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
-                "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj"
+              "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
+                "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj"
               }
             }
           }
@@ -298,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }

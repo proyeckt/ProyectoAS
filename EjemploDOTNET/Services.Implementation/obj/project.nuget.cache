@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CMh1+iqg3ccKNXIy/K8vLvOcE5zB6f+QJ9jGpXYlAVXuEFvq9MpjpfKNzEWU07eCsVboDY1jVCi6Pw2q/dTnkA==",
+  "dgSpecHash": "7by0vtTkKO52nUfd/imaTlRhn3bYMLcEK0OBa2axEcuZobiNwJGTf8svt7jd9Qaa4Vf8zdjBmNG5DCaJlhjYjA==",
   "success": true,
-  "projectFilePath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+  "projectFilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
   "expectedPackageFiles": [
     "/home/davidlopez/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/home/davidlopez/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",

@@ -1542,11 +1542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+      "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+      "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
       "packagesPath": "/home/davidlopez/.nuget/packages/",
-      "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/obj/",
+      "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -1561,8 +1561,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-              "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+            "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+              "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
             }
           }
         }
@@ -1601,7 +1601,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

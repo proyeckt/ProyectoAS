@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "65QR34Jr/o77PcJYFY7xzxUdfxx4VdfEXfCvIKlXY6cF1+AXkCla8EohJQ0Ptj68/IFbqrp03dL5BrxVN/9z4A==",
+  "dgSpecHash": "UXnqAGPWxGfGgsadHAvdnGkocqAnlp9cfq9Z3hD35IZY3phdJfOR1IWwD7wALDvNzvPuKfyLrOG6HiE1PSY+jA==",
   "success": true,
-  "projectFilePath": "/home/davidlopez/Descargas/EjemploDOTNET/DataAccess/DataAccess.csproj",
+  "projectFilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
   "expectedPackageFiles": [
     "/home/davidlopez/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/home/davidlopez/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",

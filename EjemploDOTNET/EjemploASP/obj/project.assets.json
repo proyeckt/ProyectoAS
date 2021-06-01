@@ -1599,11 +1599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+      "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
       "projectName": "EjemploASP",
-      "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+      "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
       "packagesPath": "/home/davidlopez/.nuget/packages/",
-      "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/EjemploASP/obj/",
+      "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/EjemploASP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -1618,11 +1618,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
-              "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj"
+            "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+              "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
             },
-            "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
-              "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
+            "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+              "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
             }
           }
         }
@@ -1654,7 +1654,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

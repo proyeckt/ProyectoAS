@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {}
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {}
   },
   "projects": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+    "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectUniqueName": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
         "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/",
+        "outputPath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/davidlopez/.nuget/NuGet/NuGet.Config"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
