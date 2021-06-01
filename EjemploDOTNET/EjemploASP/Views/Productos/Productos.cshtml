@@ -34,10 +34,15 @@
                 <br />
 
             }
-
-
-
         </div>
     </body>
     </html>
+}
+
+@using (Html.BeginForm("productController","Pay"))
+{
+    <a href="../billingController/GoBack">
+        <input type="button" value="Pagar" />
+    </a>
+        
 }

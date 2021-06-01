@@ -27,7 +27,7 @@ namespace EjemploASP.Controllers
             Producto producto = productoService.findProducto(nombre);
             cart.Add(producto);
             
-            //ViewData["Cart"] = cart;
+            ViewData["Cart"] = cart;
 
             return View ("Views/Login/Error.cshtml"); 
         }
