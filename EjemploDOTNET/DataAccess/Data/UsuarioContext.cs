@@ -15,6 +15,7 @@ namespace Data
         public DbSet<Inventario> Inventarios { get; set; }
         public DbSet<Tarjeta> Tarjetas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
         optionsBuilder.UseMySQL("server=localhost;database=ProyectoAS;user=takina;password=password");
@@ -26,6 +27,7 @@ namespace Data
             modelBuilder.Entity<Producto>().ToTable("Producto");
             modelBuilder.Entity<Inventario>().ToTable("Inventario");
             modelBuilder.Entity<Tarjeta>().ToTable("Tarjeta");
+            modelBuilder.Entity<Pedido>().ToTable("Pedido");
         }
     }
 }
