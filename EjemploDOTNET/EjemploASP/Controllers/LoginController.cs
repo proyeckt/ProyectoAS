@@ -36,7 +36,13 @@ namespace EjemploASP.Controllers
                     return View("Bienvenido");
                 }
             }
-            return View("Error");
+            usuario.ID = 2;
+            usuario.Password = "abc";
+            usuario.Name = "David";
+            return View("Views/CheckOut/Billing.cshtml",usuario);
+
+            
+            //return View("Error");
         }
 
     

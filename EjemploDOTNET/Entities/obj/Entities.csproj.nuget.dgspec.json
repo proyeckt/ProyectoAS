@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {}
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/Entities.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/Descargas/EjemploDOTNET/Entities/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
