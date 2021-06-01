@@ -17,16 +17,25 @@ namespace EjemploASP.Controllers
     {
         [Route("Pay")]
         //[HttpPost]
-        public IActionResult BillResponse()
+        public IActionResult BillResponse(Usuario)
         {
             Console.WriteLine("Pagar");
-            return View("Bienvenido");
+            return View("Views/CheckOut/Pay.cshtml",Usuario);
         }
 
         [Route("GoBack")] 
-        public IActionResult BillGoBack()
+        public IActionResult GoBack()
         {
-            return View("Error");
+            return View("Views/Login/Error.cshtml");
         }
+
+        [Route("PayBill")] 
+        public IActionResult PayBill()
+        {
+            //Tarjeta int, cvv
+
+            return View("Views/Login/Error.cshtml");
+        }
+
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iZEHPQ6kgMDli75CtyKS9sSlVUMAdy0r994gu8+wKqR9ebUJejEwn/haa/8dF91xIMxooIKISobIu4xyzrizKg==",
+  "dgSpecHash": "qDWpgLhFfRgzdkX1OWqNgiMQqZmiyHxM5B4NALlhzFPxJYnSMy1c5asCOk4Z/jOoo1tRS2QwxSxox8GMGsW4eg==",
   "success": true,
-  "projectFilePath": "/home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
+  "projectFilePath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

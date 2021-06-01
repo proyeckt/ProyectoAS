@@ -1,20 +1,37 @@
 
 
+@model Usuario
 
 @{
     ViewData["Title"] = "Billing";
     Layout = null;
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width-device-width"/>
-    <tittle>Billing</tittle>
-</head>
-<body>
-    <h2>Bill information</h2>
-    <p>Número de productos</p>
-    <p>Costo total</p>
-</body>
-</html>
+@using (Html.BeginForm("Pay", "billingController","GoBack"))
+{
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width-device-width"/>
+        
+    </head>
+    <body>
+        <h2>Facturación</h2>
+        <b>Número de productos: </b> @Model.Password
+        <br />
+        <b>Costo total: </b>@Model.ID
+        <br />
+            <input type="submit" value="Pagar"/>
+        </p>
+        
+        
+    </body>
+    </html>
+}
+@using (Html.BeginForm("billingController","GoBack"))
+{
+    <a href="../billingController/GoBack">
+    <input type="button" value="Retroceder" />
+</a>
+        
+}

@@ -39,7 +39,7 @@ namespace EjemploASP.Controllers
             usuario.ID = 2;
             usuario.Password = "abc";
             usuario.Name = "David";
-            return View("Error",usuario);
+            return View("Views/CheckOut/Billing.cshtml",usuario);
 
             
             //return View("Error");

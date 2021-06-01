@@ -22,3 +22,15 @@
 /home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.dll
 /home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/ref/Entities.dll
 /home/davidlopez/Escritorio/ProyectoAS/EjemploDOTNET/Entities/obj/Debug/net5.0/Entities.pdb
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\bin\Debug\net5.0\Entities.deps.json
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\bin\Debug\net5.0\Entities.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\bin\Debug\net5.0\ref\Entities.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\bin\Debug\net5.0\Entities.pdb
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\ref\Entities.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\Entities\obj\Debug\net5.0\Entities.pdb
