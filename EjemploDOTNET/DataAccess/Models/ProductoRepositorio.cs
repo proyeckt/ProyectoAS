@@ -29,7 +29,7 @@ namespace Models
             using (var context = new UsuarioContext())
             {
                 var products = context.Productos;
-                foreach (var prod in products)
+                foreach (var prod in products.ToList())
                 {
                     if(id.Equals(prod.ID)){
                         Console.WriteLine("True");
@@ -47,7 +47,15 @@ namespace Models
             using (var context = new UsuarioContext())
             {
                 var products = context.Productos;
-                return products.ToList();
+                
+                List<Producto> lista= new List<Producto>();
+                //IQueryable<Producto> rtn = from temp  in products select temp;
+                Console.WriteLine("Prods:"+products.Count());
+                //for(int i =)
+                lista=products.ToList<Producto>();
+                Console.WriteLine("List:"+lista.Count());
+                //var list = rtn.ToList();
+                return lista;
             }
         }
     }   

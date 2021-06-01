@@ -33,11 +33,24 @@ namespace EjemploASP.Controllers
                 bool loginBool = userService.validarUsuario(usuario.Email,usuario.Password);
                 if (loginBool)
                 {
-                    return View("Bienvenido");
+                    IProductoService productoService = new ProductoService();
+                    List<Producto> listaProductos = new List<Producto>();
+                    Producto pr1=new Producto();
+                    pr1.Name="Sandwich1";
+                    pr1.Precio=2000;
+                    Producto pr2=new Producto();
+                    pr2.Name="Sandwich2";
+                    pr2.Precio=4000;
+                    productoService.saveProducto(pr1);
+                    productoService.saveProducto(pr2);
+                    listaProductos = productoService.findProductos();
+                    Console.WriteLine(p.Name);
+                    Console.WriteLine("Size"+ listaProductos.Count());
+                    return View("Views/Productos/Productos.cshtml",listaProductos);
                 }
             }
 //-----------------------------------------------------------------------------------------------
-            Pedido p = new Pedido();
+            /*Pedido p = new Pedido();
             p.ID = 2;
             p.Precio = 3000;
             p.MetodoPago = "Efectivo";
@@ -65,11 +78,10 @@ namespace EjemploASP.Controllers
             List<Producto> listaProductos = new List<Producto>();
             listaProductos.Add(producto1);
             listaProductos.Add(producto2);
-
-            return View("Views/Productos/Productos.cshtml",listaProductos);
-
+            */
+            //return View("Views/Productos/Productos.cshtml",listaProductos);
             
-            //return View("Error");
+            return View("Error");
         }
 
     
