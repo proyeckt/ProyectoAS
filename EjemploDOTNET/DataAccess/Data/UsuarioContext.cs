@@ -10,18 +10,24 @@ namespace Data
         }*/
         
 
-        //public DbSet<Course> Courses { get; set; }
-        //public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Inventario> Inventarios { get; set; }
+        public DbSet<Tarjeta> Tarjetas { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
         optionsBuilder.UseMySQL("server=localhost;database=ProyectoAS;user=takina;password=password");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Course>().ToTable("Course");
-            //modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
             modelBuilder.Entity<Usuario>().ToTable("Usuario");
+            modelBuilder.Entity<Item>().ToTable("Item");
+            modelBuilder.Entity<Producto>().ToTable("Producto");
+            modelBuilder.Entity<Inventario>().ToTable("Inventario");
+            modelBuilder.Entity<Tarjeta>().ToTable("Tarjeta");
+            modelBuilder.Entity<Pedido>().ToTable("Pedido");
         }
     }
 }

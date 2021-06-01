@@ -1,0 +1,43 @@
+@model List<Producto>
+@{
+    ViewData["Title"] = "Productos";
+    Layout = null;
+}
+@using (Html.BeginForm("AddToCart", "productController"))
+{
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Nuestros sandwiches</title>
+        </head>
+    <body>
+        <h1>Nuestros sandwiches</h1>
+
+        
+        
+        <div class="row">
+            
+            @foreach(var item in Model)
+            {
+                <span>
+                    Nombre producto: @item.Name 
+                </span>
+                <br />
+                <span>
+                    Valor: @item.Precio 
+                </span>
+                @Html.ActionLink(
+                    "AddToCart", "AddToCart", "productController", new { nombre=item.ID }
+                )
+
+                <br />
+                <br />
+
+            }
+
+
+
+        </div>
+    </body>
+    </html>
+}

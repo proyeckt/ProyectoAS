@@ -15,12 +15,19 @@ namespace EjemploASP.Controllers
     [Route("billingController")]
     public class BilligController : Controller
     {
+/* 
+        public Tarjeta tarjeta{get; set;}
+
+        public BilligController(){
+            tarjeta = new Tarjeta();
+        } */
+
         [Route("Pay")]
         //[HttpPost]
-        public IActionResult BillResponse(Usuario)
+        public IActionResult BillResponse()
         {
             Console.WriteLine("Pagar");
-            return View("Views/CheckOut/Pay.cshtml",Usuario);
+            return View("Views/CheckOut/Pay.cshtml");
         }
 
         [Route("GoBack")] 
@@ -30,12 +37,13 @@ namespace EjemploASP.Controllers
         }
 
         [Route("PayBill")] 
-        public IActionResult PayBill()
+        [HttpPost]
+        public IActionResult PayBill(Tarjeta tarjeta)
         {
-            //Tarjeta int, cvv
-
+            Console.WriteLine("PayBill");
+            Console.WriteLine(tarjeta.CVV);
+            Console.WriteLine(tarjeta.FechaExpiracion);
             return View("Views/Login/Error.cshtml");
         }
-
     }
 }

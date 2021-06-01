@@ -1,29 +1,37 @@
+@model Tarjeta
+
+@{
+    ViewData["Title"] = "Pay";
+}
 
 
-
-
-
-@using (Html.BeginForm("Login", "LoginController", "Post"))
+@using (Html.BeginForm("PayBill", "billingController", "Post"))
 {
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Ingreso al sistema</legend>
         <div class="editor-label">
-            @Html.LabelFor(model => model.Email)
+            @Html.LabelFor(model => model.NumeroTarjeta)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.Email)
-            @Html.ValidationMessageFor(model => model.Email)
+            @Html.TextBoxFor(model => model.NumeroTarjeta)
+        
         </div>
         <div class="editor-label">
-            @Html.LabelFor(model => model.Password)
+            @Html.LabelFor(model => model.FechaExpiracion)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.Password)
-            @Html.ValidationMessageFor(model => model.Password)
+            @Html.TextBoxFor(model => model.FechaExpiracion)
         </div>
-       <p>
-            <input type="submit" value="Login" />
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CVV)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.CVV)
+        </div>
+        <p>
+            <input type="submit" value="PayBill" />
         </p>
     </fieldset>
 }

@@ -257,4 +257,5 @@ C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\ref\EjemploASP.dll
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\EjemploASP.pdb
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\EjemploASP.genruntimeconfig.cache
-C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\Razor\Views\Shared\Pago.cshtml.g.cs
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\Razor\Views\CheckOut\Pay.cshtml.g.cs
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\Razor\Views\Productos\Productos.cshtml.g.cs

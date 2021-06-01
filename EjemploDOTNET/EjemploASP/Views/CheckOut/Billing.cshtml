@@ -1,6 +1,6 @@
 
 
-@model Usuario
+@model Pedido
 
 @{
     ViewData["Title"] = "Billing";
@@ -17,10 +17,11 @@
     </head>
     <body>
         <h2>Facturación</h2>
-        <b>Número de productos: </b> @Model.Password
+        <b>Número de productos: </b> @Model.Productos.Count()
         <br />
-        <b>Costo total: </b>@Model.ID
+        <b>Costo total: </b>@Model.Precio
         <br />
+        <p>
             <input type="submit" value="Pagar"/>
         </p>
         
@@ -31,7 +32,7 @@
 @using (Html.BeginForm("billingController","GoBack"))
 {
     <a href="../billingController/GoBack">
-    <input type="button" value="Retroceder" />
-</a>
+        <input type="button" value="Retroceder" />
+    </a>
         
 }

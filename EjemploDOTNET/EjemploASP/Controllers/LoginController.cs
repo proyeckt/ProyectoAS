@@ -36,10 +36,37 @@ namespace EjemploASP.Controllers
                     return View("Bienvenido");
                 }
             }
-            usuario.ID = 2;
-            usuario.Password = "abc";
-            usuario.Name = "David";
-            return View("Views/CheckOut/Billing.cshtml",usuario);
+//-----------------------------------------------------------------------------------------------
+            Pedido p = new Pedido();
+            p.ID = 2;
+            p.Precio = 3000;
+            p.MetodoPago = "Efectivo";
+            Producto pr1 = new Producto();
+            Producto pr2 = new Producto();
+            ICollection<Producto> prs = new List<Producto>();
+
+            
+            pr1.Name = "Basura";
+            pr2.Name = "Mojarra";
+            prs.Add(pr1);
+            prs.Add(pr2);
+            p.Productos = prs;
+
+// -----------------------------------------------------------------------------------------------
+            Producto producto1 = new Producto();
+            producto1.Name = " Aguacate";
+            producto1.Precio = 23000;
+            producto1.ID = 1;
+            Producto producto2 = new Producto();
+            producto2.ID = 3;
+            producto2.Name = " Patos";
+            producto2.Precio = 4000;
+
+            List<Producto> listaProductos = new List<Producto>();
+            listaProductos.Add(producto1);
+            listaProductos.Add(producto2);
+
+            return View("Views/Productos/Productos.cshtml",listaProductos);
 
             
             //return View("Error");
