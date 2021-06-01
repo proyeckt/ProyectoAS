@@ -12,7 +12,7 @@ namespace Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public string Name { get; set; }
-        public ICollection<Item> Items { get; set; }
+        //public ICollection<Item> Items { get; set; }
         public double Precio { get; set; }
         //public DateTime EnrollmentDate { get; set; }
 

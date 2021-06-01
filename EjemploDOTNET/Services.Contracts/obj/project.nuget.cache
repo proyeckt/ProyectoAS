@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bX1WSAPpJ2Cb2Efbck3BKV++z6ToErlRuyeuBMQb6dM30S7zRzs6cSag3NUwXJ+Eiisf2Z8hkglsdymhoVJBew==",
+  "dgSpecHash": "jKsEP6CatVa39TrzcFa0ZqsF9C5sSk17pLPscsW7r2ml6o/I86tjhW7/OBjpBFBt3P4ScNbPMxdU/DaXChTMEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
+  "projectFilePath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
