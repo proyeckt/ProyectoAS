@@ -342,3 +342,6 @@ C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\bin\Debug\net5.
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\bin\Debug\net5.0\System.Web.WebPages.dll
 C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\Razor\Views\CheckOut\Domicilio.cshtml.g.cs
+C:\Users\dadav\Desktop\Arqui\ProyectoAS\EjemploDOTNET\EjemploASP\obj\Debug\net5.0\Razor\Views\CheckOut\Recoger.cshtml.g.cs

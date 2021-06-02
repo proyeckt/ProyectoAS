@@ -1,13 +1,14 @@
-@model List<Producto>
+@model PedidoVirtual
 
 @{
     ViewData["Title"] = "Billing";
     Layout = null;
-    var productos = ViewData["Cart"] as List<Producto>;
-    var precio = ViewData["Precio"];
+    <!-- var productos = ViewData["Cart"] as List<Producto>;
+    var precio = ViewData["Precio"]; -->
+    var pedido = ViewData["Pedido"] as PedidoVirtual; 
 }
 
-@using (Html.BeginForm("Pay", "billingController","GoBack"))
+@using (Html.BeginForm("Next", "billingController"))
 {
     <!DOCTYPE html>
     <html>
@@ -17,12 +18,30 @@
     </head>
     <body>
         <h2>Facturación</h2>
-        <b>Ítems seleccionado: </b> @productos.Count()
+        <b>Ítems seleccionado: </b> @pedido.Productos.Count()
         <br />
-        <b>Costo total: </b>@precio.ToString()
+        <b>Costo total: </b> @pedido.Precio
         <br />
+        <h3>Seleccione el tipo de entrega: </h3>
+
+        <div class="col-md-10">  
+            Domicilio  
+            @Html.RadioButtonFor(model => model.TipoEntrega, "Domicilio")  
+            Recoger en tienda  
+            @Html.RadioButtonFor(model =>  model.TipoEntrega, "Recoger en tienda")  
+        </div>  
+
+        <h3>Seleccione el método de pago</h3>
+
+        <div class="col-md-10">  
+            Tarjeta Credito  
+            @Html.RadioButtonFor(model => model.MetodoPago, "Tarjeta Credito")  
+            Pago contra entrega
+            @Html.RadioButtonFor(model =>  model.MetodoPago, "Pago contra entrega")  
+        </div>  
+       
         <p>
-            <input type="submit" value="Pagar"/>
+            <input type="submit" value="Siguiente"/>
         </p>
         
     </body>

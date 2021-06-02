@@ -10,8 +10,9 @@ using Entities;
 using Services.Implementation;
 using Services.Contracts;
 using System.Web.Helpers;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+//using System.Text.Json;
+//using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace EjemploASP.Controllers
 {
@@ -26,8 +27,9 @@ namespace EjemploASP.Controllers
         public IActionResult AddToCart(int nombre, string json, double costo)
         {
             Console.WriteLine(json);
-            
-            List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
+            //string str = JsonConvert.DeserializeObject<string>(json);
+            List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(json);
+            //List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
             IProductoService productoService = new ProductoService();
             Producto producto = productoService.findProducto(nombre);
             if (producto.Cantidad > 0)
@@ -70,10 +72,16 @@ namespace EjemploASP.Controllers
                 return View ("Views/Productos/productos.cshtml",listaProductos); 
             }
             Console.WriteLine(json);
-            List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
-            ViewData["Precio"] = costo;
-            ViewData["Cart"] = productos;
-            return View("Views/CheckOut/Billing.cshtml");
+
+            PedidoVirtual pedido = new PedidoVirtual();
+            pedido.Precio = costo;
+
+            pedido.Productos = JsonConvert.DeserializeObject<List<Producto>>(json);
+
+            
+
+            ViewData["Pedido"] = pedido;
+            return View("Views/CheckOut/Billing.cshtml",pedido);
         }
 
         [Route("GoBack")] 

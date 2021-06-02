@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Entities;
 using Services.Implementation;
 using Services.Contracts;
+using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
 namespace EjemploASP.Controllers
@@ -71,6 +72,24 @@ namespace EjemploASP.Controllers
             }
             else{
                 return View ("Views/Validation/ErrorTarjetaCredito.cshtml");
+            }
+        }
+        
+        [Route("Next")] 
+        public IActionResult Next(PedidoVirtual pedido)
+        {
+            //PedidoVirtual pedido = new PedidoVirtual();
+            //PedidoVirtual pedido = JsonConvert.DeserializeObject<PedidoVirtual>(json);
+            Console.WriteLine("pedido.TipoEntrega -- "+pedido.TipoEntrega);
+            Console.WriteLine("pedido.MetodoPago -- "+pedido.MetodoPago);
+            
+            if(pedido.TipoEntrega == "Domicilio")
+            {
+                return View ("Views/CheckOut/Domicilio.cshtml");   
+            }
+            else 
+            {
+                return View ("Views/CheckOut/Recoger.cshtml");   
             }
         }
 
