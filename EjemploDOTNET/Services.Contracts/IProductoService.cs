@@ -10,5 +10,6 @@ namespace Services.Contracts
         public Producto findProducto(int id);
         public bool saveProducto(Producto producto);
         public List<Producto> findProductos();
+        public void dropTable();
     }
 }

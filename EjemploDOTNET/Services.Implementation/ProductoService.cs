@@ -33,5 +33,10 @@ namespace Services.Implementation
             return productos;
         }
 
+        public void dropTable(){
+            ProductoRepositorio dataAccess=new ProductoRepositorio();
+            dataAccess.dropTable();
+        }
+
     }
 }

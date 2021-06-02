@@ -1,10 +1,10 @@
-
-
-@model Pedido
+@model List<Producto>
 
 @{
     ViewData["Title"] = "Billing";
     Layout = null;
+    var productos = ViewData["Cart"] as List<Producto>;
+    var precio = ViewData["Precio"];
 }
 
 @using (Html.BeginForm("Pay", "billingController","GoBack"))
@@ -17,14 +17,13 @@
     </head>
     <body>
         <h2>Facturación</h2>
-        <b>Número de productos: </b> @Model.Productos.Count()
+        <b>Ítems seleccionado: </b> @productos.Count()
         <br />
-        <b>Costo total: </b>@Model.Precio
+        <b>Costo total: </b>@precio.ToString()
         <br />
         <p>
             <input type="submit" value="Pagar"/>
         </p>
-        
         
     </body>
     </html>
@@ -32,7 +31,7 @@
 @using (Html.BeginForm("billingController","GoBack"))
 {
     <a href="../billingController/GoBack">
-        <input type="button" value="Retroceder" />
+        <input type="button" value="Cancelar" />
     </a>
         
 }

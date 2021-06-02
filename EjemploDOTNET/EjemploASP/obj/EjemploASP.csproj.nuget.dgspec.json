@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {}
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj": {}
   },
   "projects": {
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
               }
             }
           }
@@ -66,37 +68,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj",
         "projectName": "EjemploASP",
-        "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
               },
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj"
               }
             }
           }
@@ -110,6 +114,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNet.WebPages": {
+              "target": "Package",
+              "version": "[3.2.6, )"
+            },
+            "System-Web-Helpers.dll": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -128,26 +142,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -180,34 +196,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
         "projectName": "Services.Contracts",
-        "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
               }
             }
           }
@@ -236,40 +254,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+    "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
+        "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj",
         "projectName": "Services.Implementation",
-        "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj",
-        "packagesPath": "/home/davidlopez/.nuget/packages/",
-        "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/obj/",
+        "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj",
+        "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/DataAccess/DataAccess.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\DataAccess\\DataAccess.csproj"
               },
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
               },
-              "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj": {
-                "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj"
+              "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj": {
+                "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj"
               }
             }
           }
@@ -298,7 +318,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

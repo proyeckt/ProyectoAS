@@ -1,0 +1,15 @@
+
+
+@Model Pedido
+
+<h1>
+    Pedido realizado
+</h1>
+<p>Su descuento en la tarjeta ha sido realizado de manera satisfactoria.</p>
+@using (Html.BeginForm("billingController","VerMenu"))
+{
+
+<a href="../billingController/VerMenu">
+        <input type="button" value="Ver menú" />
+    </a>
+}

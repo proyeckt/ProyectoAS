@@ -31,7 +31,7 @@ namespace Models
                 var pedidos = context.Pedidos;
                 foreach (var ped in pedidos)
                 {
-                    if(id.Equals(ped.ID)){
+                    if(id.Equals(ped.PedidoID)){
                         Console.WriteLine("True");
                         return ped;
                     }

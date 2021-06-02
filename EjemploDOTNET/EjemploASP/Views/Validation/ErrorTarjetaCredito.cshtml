@@ -1,0 +1,23 @@
+
+
+<h1>
+    Tarjeta rechazada
+</h1>
+
+@using (Html.BeginForm("billingController","Pay"))
+{
+
+<a href="../billingController/Pay">
+        <input type="button" value="Volver a intentar" />
+    </a>
+
+}
+
+@using (Html.BeginForm("billingController","VerMenu"))
+{
+
+<a href="../billingController/VerMenu">
+        <input type="button" value="Volver al menú" />
+    </a>
+
+}

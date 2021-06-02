@@ -35,17 +35,14 @@ namespace EjemploASP.Controllers
                 {
                     IProductoService productoService = new ProductoService();
                     List<Producto> listaProductos = new List<Producto>();
-                    Producto pr1=new Producto();
-                    pr1.Name="Sandwich1";
-                    pr1.Precio=2000;
-                    Producto pr2=new Producto();
-                    pr2.Name="Sandwich2";
-                    pr2.Precio=4000;
-                    productoService.saveProducto(pr1);
-                    productoService.saveProducto(pr2);
+                    //CREA LOS PRODUCTOS EN LA BASE DE DATOS
+                    //InitializeProducts(productoService);
+
+
                     listaProductos = productoService.findProductos();
-                    Console.WriteLine(p.Name);
-                    Console.WriteLine("Size"+ listaProductos.Count());
+                    List<Producto> cart = new List<Producto>();
+                    ViewData["Cart"] = cart;
+                    ViewData["Costo"] = 0;
                     return View("Views/Productos/Productos.cshtml",listaProductos);
                 }
             }
@@ -83,6 +80,37 @@ namespace EjemploASP.Controllers
             
             return View("Error");
         }
+
+        public void InitializeProducts(IProductoService productoService)
+        {
+            //productoService.dropTable();
+
+            Producto pr1=new Producto();
+            pr1.ProductoID = 1;
+            pr1.Name="Sandwich Cubano";
+            pr1.Precio=12000;
+            pr1.Cantidad = 3;
+            Producto pr2=new Producto();
+            pr2.ProductoID = 2;
+            pr2.Name="Sandwich Paisa";
+            pr2.Precio=24000;
+            pr1.Cantidad = 2;
+            Producto pr3=new Producto();
+            pr3.ProductoID = 3;
+            pr3.Name="Sandwich de lentejas";
+            pr3.Precio=22000;
+            pr3.Cantidad = 5;
+            Producto pr4=new Producto();
+            pr4.ProductoID = 4;
+            pr4.Name="Sandwich pesto";
+            pr4.Precio=15000;
+            pr4.Cantidad = 1;
+
+            productoService.saveProducto(pr1);
+            productoService.saveProducto(pr2);
+            productoService.saveProducto(pr3);
+            productoService.saveProducto(pr4);
+        } 
 
     
     }

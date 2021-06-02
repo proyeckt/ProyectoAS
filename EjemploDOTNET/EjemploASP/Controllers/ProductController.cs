@@ -9,6 +9,9 @@ using Microsoft.Extensions.Logging;
 using Entities;
 using Services.Implementation;
 using Services.Contracts;
+using System.Web.Helpers;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace EjemploASP.Controllers
 {
@@ -16,20 +19,32 @@ namespace EjemploASP.Controllers
     public class ProductController : Controller
     {
 
-        List<Producto> cart = new List<Producto>();
+        //List<Producto> cart = new List<Producto>();
 
         [Route("AddToCart")]
-        public IActionResult AddToCart(int nombre)
+        //nombre es el ID, la palabra ID esta reservada
+        public IActionResult AddToCart(int nombre, string json, double costo)
         {
-
-            Console.WriteLine(nombre);
+            Console.WriteLine(json);
+            
+            List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
             IProductoService productoService = new ProductoService();
             Producto producto = productoService.findProducto(nombre);
-            cart.Add(producto);
+            if (producto.Cantidad > 0)
+            {
+                productos.Add(producto);
+                costo += producto.Precio;
+            }
+            else
+                ViewBag.Message = "No hay disponibilidad de este sanduche";
             
-            ViewData["Cart"] = cart;
+            Console.WriteLine(costo);
+            List<Producto> listaProductos = new List<Producto>();
+            listaProductos = productoService.findProductos();
 
-            return View ("Views/Login/Error.cshtml"); 
+            ViewData["Cart"] = productos;
+            ViewData["Costo"] = costo; 
+            return View ("Views/Productos/productos.cshtml",listaProductos); 
         }
 /* 
 
@@ -41,10 +56,24 @@ namespace EjemploASP.Controllers
 
         [Route("Pay")]
         //[HttpPost]
-        public IActionResult BillResponse()
+        public IActionResult Pay(string json, double costo)
         {
-            Console.WriteLine("Pagar");
-            return View("Views/CheckOut/Pay.cshtml");
+            if(costo == 0)
+            {
+                ViewBag.Message = "El carrito se encuentra vacio";
+                List<Producto> listaProductos = new List<Producto>();
+                IProductoService productoService = new ProductoService();
+                listaProductos = productoService.findProductos();
+                List<Producto> listaVacia = new List<Producto>();
+                ViewData["Cart"] = listaVacia;
+                ViewData["Costo"] = costo; 
+                return View ("Views/Productos/productos.cshtml",listaProductos); 
+            }
+            Console.WriteLine(json);
+            List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
+            ViewData["Precio"] = costo;
+            ViewData["Cart"] = productos;
+            return View("Views/CheckOut/Billing.cshtml");
         }
 
         [Route("GoBack")] 
@@ -58,9 +87,8 @@ namespace EjemploASP.Controllers
         public IActionResult PayBill(Tarjeta tarjeta)
         {
             Console.WriteLine("PayBill");
-            Console.WriteLine(tarjeta.CVV);
-            Console.WriteLine(tarjeta.FechaExpiracion);
             return View("Views/Login/Error.cshtml");
         }
+
     }
 }

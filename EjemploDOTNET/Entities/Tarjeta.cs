@@ -13,7 +13,7 @@ namespace Entities
         public int ID { get; set; }
         
         public string NumeroTarjeta { get; set; }
-        public DateTime FechaExpiracion { get; set; }
+        public string FechaExpiracion { get; set; }
 
         public string CVV { get; set; }
 

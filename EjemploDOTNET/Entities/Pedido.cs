@@ -10,10 +10,10 @@ namespace Entities
     {
         [ScaffoldColumn(false)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
-        public Usuario Cliente { get; set; }
+        public int PedidoID { get; set; }
+        //public Usuario Cliente { get; set; }
         public string MetodoPago { get; set; }
-        public ICollection<Producto> Productos { get; set; }
+        //public ICollection<Producto> Productos { get; set; }
         public double Precio { get; set; }
         
 
