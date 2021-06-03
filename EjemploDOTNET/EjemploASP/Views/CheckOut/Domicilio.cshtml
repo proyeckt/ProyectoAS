@@ -2,16 +2,18 @@
 
 @model PedidoVirtual
 
-<h1>
-Domicilio
-</h1>
-
-
 @using (Html.BeginForm("Domicilio", "billingController", "Post"))
 {
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend>Dirección de residencia</legend>
+    @if(@Model.TipoEntrega == "Domicilio")
+    {
+        <legend>Dirección para domicilio</legend>
+    }
+    @if(@Model.TipoEntrega == "Recoger en tienda")
+    {
+        <legend>Direccion para ver tiendas</legend>
+    }
         <div class="editor-label">
             @Html.LabelFor(model => model.Direccion)
         </div>
@@ -29,10 +31,18 @@ Domicilio
         }
         
         </div>
-
-       <p>
-            <input type="submit" value="Pedir" />
-        </p>
+        @if(@Model.TipoEntrega == "Domicilio")
+    {
+        <p>
+                <input type="submit" value="Pedir" />
+            </p>
+    }
+    @if(@Model.TipoEntrega == "Recoger en tienda")
+    {
+<p> 
+                <input type="submit" value="Ver" />
+            </p>
+    }
     </fieldset>
 }
 
