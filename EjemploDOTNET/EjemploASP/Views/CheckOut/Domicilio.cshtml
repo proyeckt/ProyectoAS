@@ -1,7 +1,37 @@
 
 
-
+@model PedidoVirtual
 
 <h1>
 Domicilio
 </h1>
+
+
+@using (Html.BeginForm("Domicilio", "billingController", "Post"))
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Dirección de residencia</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Direccion)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Direccion)
+        </div>
+         <div hidden>
+        @Html.HiddenFor(model => model.Precio)
+        @Html.HiddenFor(model => model.TipoEntrega)
+        @Html.HiddenFor(model => model.MetodoPago)
+        @for(int i=0; i < Model.Productos.Count() ; i++)
+        {
+            @Html.HiddenFor(model => Model.Productos[i])
+            @Html.EditorFor(model => model.Productos[i])
+        }
+        </div>
+
+       <p>
+            <input type="submit" value="Pedir" />
+        </p>
+    </fieldset>
+}
+

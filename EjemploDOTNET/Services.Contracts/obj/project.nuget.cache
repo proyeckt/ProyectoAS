@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bX1WSAPpJ2Cb2Efbck3BKV++z6ToErlRuyeuBMQb6dM30S7zRzs6cSag3NUwXJ+Eiisf2Z8hkglsdymhoVJBew==",
+  "dgSpecHash": "bl8DOFf1R6/hXFlPYSQORSWSj2q/kS+hiagWoAF+soizsi5nJOiNPxnt6L5JWNzf0O9cVkXBuHilSBrNYUJ3Qw==",
   "success": true,
   "projectFilePath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dadav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
