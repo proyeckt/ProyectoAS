@@ -1,17 +1,17 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "ENCa7rDUKNy7S5Gf+/48fBTnj7epy/JHjzwS5e0xwS5EAI+Np5HVyZq7/j3gZWKVT0oc0jQ1A1SiMRBVPg50zA==",
+  "dgSpecHash": "q7rNRw1+sDd2U3sNoI55CcDir/h1oNZxHElpxWwGqruA1FPJ+TtehJ8zWtEdfr/tCIqT9GjI84R7ojQkN0KvFw==",
   "success": true,
   "projectFilePath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj",
-  "expectedPackageFiles": [],
-=======
-  "dgSpecHash": "FgFjBlr7zjmHk8zUA34gvN5M85lO1sjIPbJ63mGyyTuvpTgryZ1lG/nBkSDqmy/00UwF9iEqmn05Cl/bNC36CQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dadav\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "/home/davidlopez/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
   ],
->>>>>>> ListProducts
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché /home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -35,17 +35,17 @@ namespace EjemploASP.Controllers
                 {
                     //RemoteServices rm=new RemoteServices();
                     //rm.service1();
-                    /*IProductoService productoService = new ProductoService();
+                    IProductoService productoService = new ProductoService();
                     List<Producto> listaProductos = new List<Producto>();
                     //CREA LOS PRODUCTOS EN LA BASE DE DATOS
-                    //InitializeProducts(productoService);
+                    InitializeProducts(productoService);
 
 
                     listaProductos = productoService.findProductos();
                     List<Producto> cart = new List<Producto>();
                     ViewData["Cart"] = cart;
                     ViewData["Costo"] = 0;
-                    */
+                    
                     List<Producto> listaProductos=new List<Producto>();
                     return View("Views/Productos/Productos.cshtml",listaProductos);
                 }

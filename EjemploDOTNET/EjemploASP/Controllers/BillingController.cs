@@ -62,7 +62,7 @@ namespace EjemploASP.Controllers
                 return View ("Views/Validation/ErrorTarjeta.cshtml");
             }
             RemoteServices rm = new RemoteServices();
-            bool validate=rm.serviceValidarTarjeta(tarjeta.NumeroTarjeta,tarjeta.FechaExpiracion,tarjeta.CVV);
+            bool validate=rm.serviceValidarTarjeta(pedido.Tarjeta.NumeroTarjeta,pedido.Tarjeta.FechaExpiracion,pedido.Tarjeta.CVV);
         
             //bool validate = IsCreditCardInfoValid(tarjeta.NumeroTarjeta,tarjeta.FechaExpiracion,tarjeta.CVV );
             
