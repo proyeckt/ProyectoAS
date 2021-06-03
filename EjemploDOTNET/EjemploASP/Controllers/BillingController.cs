@@ -17,7 +17,6 @@ namespace EjemploASP.Controllers
     [Route("billingController")]
     public class BilligController : Controller
     {
-
         [Route("Pay")]
         //[HttpPost]
         public IActionResult Pay()
@@ -25,6 +24,8 @@ namespace EjemploASP.Controllers
             Console.WriteLine("Pagar");
             return View("Views/CheckOut/Pay.cshtml");
         }
+
+
 
         [Route("GoBack")] 
         public IActionResult GoBack()
@@ -52,12 +53,11 @@ namespace EjemploASP.Controllers
 
         [Route("PayBill")] 
         [HttpPost]
-        public IActionResult PayBill(Tarjeta tarjeta)
+        public IActionResult PayBill(PedidoVirtual pedido)
         {
-            Console.WriteLine("PayBill");
-            Console.WriteLine(tarjeta.CVV);
-            Console.WriteLine(tarjeta.FechaExpiracion);
-            if (tarjeta.NumeroTarjeta ==  null || tarjeta.FechaExpiracion == null || tarjeta.CVV == null)
+            Console.WriteLine(pedido.Tarjeta.NumeroTarjeta);
+
+            if (pedido.Tarjeta.NumeroTarjeta ==  null || pedido.Tarjeta.FechaExpiracion == null || pedido.Tarjeta.CVV == null)
             {
                 return View ("Views/Validation/ErrorTarjeta.cshtml");
             }
@@ -77,22 +77,46 @@ namespace EjemploASP.Controllers
                 return View ("Views/Validation/ErrorTarjetaCredito.cshtml");
             }
         }
+
         
+        
+        [Route("Up")] 
+        public IActionResult Up(string json)
+        {
+            Console.WriteLine(json);
+            return View("Views/Login/Error.cshtml");
+        }
+        
+
         [Route("Next")] 
+        [HttpPost]
         public IActionResult Next(PedidoVirtual pedido)
         {
-            //PedidoVirtual pedido = new PedidoVirtual();
-            //PedidoVirtual pedido = JsonConvert.DeserializeObject<PedidoVirtual>(json);
+            //Console.WriteLine("JSON -- "+ jsonPedido);
+            //PedidoVirtual pedido = JsonConvert.DeserializeObject<PedidoVirtual>(jsonPedido);
+            //List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(jsonProductos);
             Console.WriteLine("pedido.TipoEntrega -- "+pedido.TipoEntrega);
             Console.WriteLine("pedido.MetodoPago -- "+pedido.MetodoPago);
-            
-            if(pedido.TipoEntrega == "Domicilio")
+            Console.WriteLine("pedido.Costo -- "+pedido.Precio);
+            Console.WriteLine("pedido.Productos.Count() -- "+pedido.Productos.Count());
+            if(pedido.TipoEntrega == null)
             {
-                return View ("Views/CheckOut/Domicilio.cshtml");   
+                ViewBag.Message = "Seleccione el tipo de entrega";
+                return View ("Views/CheckOut/Billing.cshtml",pedido);
+            }
+            else if (pedido.MetodoPago == null)
+            {
+                ViewBag.Message = "Seleccione el metodo de pago";
+                ViewData["Pedido"] = pedido;
+                return View ("Views/CheckOut/Billing.cshtml",pedido);
+            } 
+            else if(pedido.TipoEntrega == "Domicilio")
+            {
+                return View ("Views/CheckOut/Domicilio.cshtml",pedido);   
             }
             else 
             {
-                return View ("Views/CheckOut/Recoger.cshtml");   
+                return View ("Views/CheckOut/Recoger.cshtml",pedido);   
             }
         }
 
@@ -121,5 +145,24 @@ namespace EjemploASP.Controllers
             //check expiry greater than today & within next 6 years <7, 8>>
             return (cardExpiry > DateTime.Now && cardExpiry < DateTime.Now.AddYears(6));
         }
+
+        [Route("Domicilio")]
+        [HttpPost]
+        public IActionResult Domicilio(PedidoVirtual pedido)
+        {
+            Console.WriteLine(pedido.Direccion);
+            Console.WriteLine("MetodoPago"+pedido.MetodoPago);
+            Console.WriteLine("Precio"+pedido.Precio);
+            
+            if (pedido.MetodoPago == "Tarjeta de credito")
+            {
+                return View("Views/CheckOut/Pay.cshtml",pedido);
+            }
+            else 
+            {
+                return View("Views/CheckOut/ContraEntrega.cshtml",pedido);
+            }
+        }
+
     }
 }

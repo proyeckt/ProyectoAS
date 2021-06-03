@@ -13,6 +13,7 @@ using System.Web.Helpers;
 //using System.Text.Json;
 //using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using EjemploASP.Controllers;
 
 namespace EjemploASP.Controllers
 {
@@ -76,12 +77,14 @@ namespace EjemploASP.Controllers
             PedidoVirtual pedido = new PedidoVirtual();
             pedido.Precio = costo;
 
-            pedido.Productos = JsonConvert.DeserializeObject<List<Producto>>(json);
+            List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(json);
 
-            
-
-            ViewData["Pedido"] = pedido;
-            return View("Views/CheckOut/Billing.cshtml",pedido);
+            ViewData["pedido"] = pedido;
+            ViewData["productos"] =productos;
+            PedidoVirtual p = new PedidoVirtual();
+            p.Precio = costo;
+            p.Productos = productos;
+            return View("Views/CheckOut/Billing.cshtml",p);
         }
 
         [Route("GoBack")] 

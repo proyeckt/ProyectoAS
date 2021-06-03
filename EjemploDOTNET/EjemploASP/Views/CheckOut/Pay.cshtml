@@ -1,4 +1,4 @@
-@model Tarjeta
+@model PedidoVirtual
 
 @{
     ViewData["Title"] = "Pay";
@@ -11,24 +11,24 @@
     <fieldset>
         <legend>Facturación</legend>
         <div class="editor-label">
-            @Html.LabelFor(model => model.NumeroTarjeta)
+            @Html.LabelFor(model => model.Tarjeta.NumeroTarjeta)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.NumeroTarjeta)
+            @Html.TextBoxFor(model => model.Tarjeta.NumeroTarjeta)
         
         </div>
         <div class="editor-label">
-            @Html.LabelFor(model => model.FechaExpiracion)
+            @Html.LabelFor(model => model.Tarjeta.FechaExpiracion)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.FechaExpiracion)
+            @Html.TextBoxFor(model => model.Tarjeta.FechaExpiracion)
         </div>
         
         <div class="editor-label">
-            @Html.LabelFor(model => model.CVV)
+            @Html.LabelFor(model => model.Tarjeta.CVV)
         </div>
         <div class="editor-field">
-            @Html.TextBoxFor(model => model.CVV)
+            @Html.TextBoxFor(model => model.Tarjeta.CVV)
         </div>
         <p>
             <input type="submit" value="PayBill" />

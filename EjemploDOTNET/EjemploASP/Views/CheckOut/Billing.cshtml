@@ -1,11 +1,13 @@
-@model PedidoVirtual
 
+@using System.Web.Helpers
+@inject IJsonHelper Json;
+@using Newtonsoft.Json;
+@model PedidoVirtual
 @{
     ViewData["Title"] = "Billing";
     Layout = null;
-    <!-- var productos = ViewData["Cart"] as List<Producto>;
-    var precio = ViewData["Precio"]; -->
-    var pedido = ViewData["Pedido"] as PedidoVirtual; 
+    var pedido = ViewData["pedido"] as PedidoVirtual;
+    var productos = ViewData["productos"] as List<Producto>;
 }
 
 @using (Html.BeginForm("Next", "billingController"))
@@ -18,11 +20,11 @@
     </head>
     <body>
         <h2>Facturación</h2>
-        <b>Ítems seleccionado: </b> @pedido.Productos.Count()
+        <b>Ítems seleccionado: </b> @Model.Productos.Count()
         <br />
-        <b>Costo total: </b> @pedido.Precio
+        <b>Costo total: </b> @Model.Precio
         <br />
-        <h3>Seleccione el tipo de entrega: </h3>
+        <h4>Seleccione el tipo de entrega: </h4>
 
         <div class="col-md-10">  
             Domicilio  
@@ -31,26 +33,39 @@
             @Html.RadioButtonFor(model =>  model.TipoEntrega, "Recoger en tienda")  
         </div>  
 
-        <h3>Seleccione el método de pago</h3>
+        <h4>Método de pago </h4>
 
         <div class="col-md-10">  
-            Tarjeta Credito  
-            @Html.RadioButtonFor(model => model.MetodoPago, "Tarjeta Credito")  
-            Pago contra entrega
-            @Html.RadioButtonFor(model =>  model.MetodoPago, "Pago contra entrega")  
+            Tarjeta de credito
+            @Html.RadioButtonFor(model => model.MetodoPago, "Tarjeta de credito")  
+            Pago contraentrega 
+            @Html.RadioButtonFor(model =>  model.MetodoPago, "Pago contraentrega")  
         </div>  
-       
-        <p>
-            <input type="submit" value="Siguiente"/>
-        </p>
+
+        <div hidden>
+        @Html.HiddenFor(model => model.Precio)
+        
+        @for(int i=0; i < Model.Productos.Count() ; i++)
+        {
+            @Html.HiddenFor(model => Model.Productos[i])
+            @Html.EditorFor(model => model.Productos[i])
+        }
+        </div>
+
+        @if (ViewBag.Message != null)  
+        {  
+            <script type="text/javascript">  
+                window.onload = function () {  
+                    alert("@ViewBag.Message");  
+                };  
+            </script>  
+        }  
+                
+        <br/>
+        <a>
+            <input type="submit" value="Siguiente" class="submit"/>
+        </a>
         
     </body>
     </html>
-}
-@using (Html.BeginForm("billingController","GoBack"))
-{
-    <a href="../billingController/GoBack">
-        <input type="button" value="Cancelar" />
-    </a>
-        
 }
