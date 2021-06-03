@@ -2,10 +2,15 @@
 
 @Model Pedido
 
+@{
+    var distancia = ViewData["distancia"] as string;
+}
+
 <h1>
     Pedido realizado
 </h1>
-<p>Su cobro en la tarjeta ha sido realizado de manera satisfactoria.</p>
+<p>La tienda seleccionada queda a @distancia de distancia</p>
+
 @using (Html.BeginForm("billingController","VerMenu"))
 {
 

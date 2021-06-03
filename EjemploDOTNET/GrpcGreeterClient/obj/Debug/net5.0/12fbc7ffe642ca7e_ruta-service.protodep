@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Ruta-serviceGrpc.cs \
+obj\Debug\net5.0\Protos/RutaService.cs: Protos/ruta-service.proto

@@ -4,13 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using System.Text;
 
 using Data;
-
-
+using System.Linq;
+using System.Collections.Generic;
 using Entities;
 
 namespace Models
 {
     public class UsuarioRepositorio{
+
         public bool addUsuario(Usuario usuario){
             using (var context = new UsuarioContext())
             {
@@ -25,6 +26,10 @@ namespace Models
                     Password = "edwinmail",
                     Name = "Edwin"
                 });*/
+                var users = context.Usuarios;
+                var lista = users.ToList<Usuario>();
+                usuario.ID = lista.Count() + 1;
+                //usuario.ID = context.Usuarios.ToList<Producto>().Count() + 1;
                 context.Usuarios.Add(usuario);
 
                 // Saves changes

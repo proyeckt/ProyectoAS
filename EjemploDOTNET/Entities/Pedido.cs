@@ -12,11 +12,11 @@ namespace Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int PedidoID { get; set; }
         //public Usuario Cliente { get; set; }
-        public string MetodoPago { get; set; }
+        public double  Valor { get; set; }
         //public ICollection<Producto> Productos { get; set; }
-        public double Precio { get; set; }
+        public DateTime Fecha { get; set; }
         //public bool TipoEntrega { get; set; }
-
+        //public string DireccionTienda  { get; set; }
         //public DateTime EnrollmentDate { get; set; }
 
         

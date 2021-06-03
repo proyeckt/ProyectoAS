@@ -21,5 +21,13 @@ namespace EjemploASP.Modelo
             Console.WriteLine(pls);
             return pls;
         } 
+        public string serviceRuta(string origen,string destino) {
+            Console.WriteLine("Start Service");
+            GrpcServicesClient client=new GrpcServicesClient();
+            string pls=client.clientRutaService(origen,destino);
+            Console.WriteLine("End Service");
+            Console.WriteLine(pls);
+            return pls;
+        }
     }
 }

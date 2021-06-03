@@ -34,12 +34,15 @@
       "EjemploASP/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
+          "GoogleApi": "3.10.9",
           "GrpcGreeterClient": "1.0.0",
           "Microsoft.AspNet.WebPages": "3.2.6",
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6",
           "Newtonsoft.Json": "12.0.3",
           "Services.Implementation": "1.0.0",
           "System-Web-Helpers.dll": "1.0.0",
+          "System.Spatial": "5.8.4",
+          "gmaps-api-net": "0.32.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -340,6 +343,20 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
+      "gmaps-api-net/0.32.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Google.Maps.dll": {
+            "assemblyVersion": "0.32.0.0",
+            "fileVersion": "0.32.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Google.Maps.dll": {}
+        }
+      },
       "Google.Protobuf/3.17.0": {
         "runtime": {
           "lib/net5.0/Google.Protobuf.dll": {
@@ -349,6 +366,21 @@
         },
         "compile": {
           "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
+      "GoogleApi/3.10.9": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Portable.BouncyCastle": "1.8.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.1/GoogleApi.dll": {
+            "assemblyVersion": "3.10.9.0",
+            "fileVersion": "3.10.9.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/GoogleApi.dll": {}
         }
       },
       "Grpc.Core.Api/2.37.0": {
@@ -672,6 +704,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Portable.BouncyCastle/1.8.1.3": {},
       "SSH.NET/2020.0.0-beta1": {
         "dependencies": {
           "SshNet.Security.Cryptography": "1.3.0"
@@ -699,16 +732,8 @@
       },
       "System-Web-Helpers.dll/1.0.0": {},
       "System.Buffers/4.5.1": {},
-      "System.Collections.Immutable/5.0.0": {
-        "compile": {
-          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
-        }
-      },
-      "System.ComponentModel.Annotations/5.0.0": {
-        "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
-        }
-      },
+      "System.Collections.Immutable/5.0.0": {},
+      "System.ComponentModel.Annotations/5.0.0": {},
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.4.0"
@@ -770,6 +795,46 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
+      "System.Spatial/5.8.4": {
+        "runtime": {
+          "lib/netstandard1.1/System.Spatial.dll": {
+            "assemblyVersion": "5.8.4.0",
+            "fileVersion": "5.8.4.63386"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.1/de/System.Spatial.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.1/es/System.Spatial.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.1/fr/System.Spatial.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.1/it/System.Spatial.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.1/ja/System.Spatial.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.1/ko/System.Spatial.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.1/ru/System.Spatial.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.1/zh-Hans/System.Spatial.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.1/zh-Hant/System.Spatial.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/System.Spatial.dll": {}
+        }
+      },
       "System.Text.Encoding.CodePages/4.4.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0"
@@ -2541,12 +2606,26 @@
       "path": "bouncycastle.netcore/1.8.5",
       "hashPath": "bouncycastle.netcore.1.8.5.nupkg.sha512"
     },
+    "gmaps-api-net/0.32.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1NpLt91KY0/AqGIpKmNbCNOj6uZjPbirdsnQJAGFHVLR3xHT2BrPsbVSy0LX2GZbaYuhijvourud9eQ4Q9QTyw==",
+      "path": "gmaps-api-net/0.32.0",
+      "hashPath": "gmaps-api-net.0.32.0.nupkg.sha512"
+    },
     "Google.Protobuf/3.17.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-iyZfmz69cqbRRjtxfrMRFUPdXZHPKD6Nn33ABcfsE36YfEsG91s3UXBAYTuF7Mw8Y1VAd78gOyGRUQIjcQyaIw==",
       "path": "google.protobuf/3.17.0",
       "hashPath": "google.protobuf.3.17.0.nupkg.sha512"
+    },
+    "GoogleApi/3.10.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7yw1XWwA9PPAZAkINnBec9TcdssN5CLyQWXSnYWV1/alIeb7/arCOb1WfL73STwHcErXHqozmOUmGJtQrE6oSw==",
+      "path": "googleapi/3.10.9",
+      "hashPath": "googleapi.3.10.9.nupkg.sha512"
     },
     "Grpc.Core.Api/2.37.0": {
       "type": "package",
@@ -2758,6 +2837,13 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
+    "Portable.BouncyCastle/1.8.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1jUpszv0ETm+hl78HKnYgY3wPzt6qRtjxaPENNrGCuB8nondbR/j75WAKdd6sxXzOzBcX07WMZhZEYc4s5jVWg==",
+      "path": "portable.bouncycastle/1.8.1.3",
+      "hashPath": "portable.bouncycastle.1.8.1.3.nupkg.sha512"
+    },
     "SSH.NET/2020.0.0-beta1": {
       "type": "package",
       "serviceable": true,
@@ -2855,6 +2941,13 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Spatial/5.8.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0xPUcjZX/SlFA34BeXGC3oPX0wX98ndJApYjdDnisWubuAprbqAX8mRPoM10vFfUE6VQyyBj7u2we7be52D+BQ==",
+      "path": "system.spatial/5.8.4",
+      "hashPath": "system.spatial.5.8.4.nupkg.sha512"
     },
     "System.Text.Encoding.CodePages/4.4.0": {
       "type": "package",

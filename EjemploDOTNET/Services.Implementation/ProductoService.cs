@@ -14,6 +14,23 @@ namespace Services.Implementation
             bool added=dataAccess.addProducto(producto);
             return added;
         }
+        public Producto updateProducto(Producto producto){
+            ProductoRepositorio dataAccess=new ProductoRepositorio();
+            Producto added=dataAccess.updateProducto(producto);
+            return added;
+        }
+
+        public Producto findProductoByName(string id){
+            ProductoRepositorio dataAccess=new ProductoRepositorio();
+            Producto valido=dataAccess.findProductoByName(id);
+            
+            if(valido!=null){
+                Console.WriteLine("Valido");
+            }
+            else Console.WriteLine("No Valido");
+            return valido;
+        }
+
 
         public Producto findProducto(int id){
             ProductoRepositorio dataAccess=new ProductoRepositorio();

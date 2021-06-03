@@ -5,6 +5,8 @@ using Grpc.Net.Client;
 
 using CreditRatingService;
 using ValidateCardService;
+using RutaService;
+
 namespace GrpcGreeterClient
 {
     public class GrpcServicesClient
@@ -64,6 +66,25 @@ namespace GrpcGreeterClient
             bool ret=reply.IsAccepted;
             Console.WriteLine(ret);
             return ret;
+            //Console.WriteLine("Press any key to exit...");
+            //Console.ReadKey();
+        }
+        public string clientRutaService(string origen,string destino){
+            var httpHandler = new HttpClientHandler
+	        {
+		        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+        	};
+
+            // The port number(5001) must match the port of the gRPC server.
+            using var channel = GrpcChannel.ForAddress("https://localhost:5001",
+            new GrpcChannelOptions { HttpHandler = httpHandler });
+            var client =  new RutaCheck.RutaCheckClient(channel);
+            var rutaRequest = new RutaRequest { Origen = origen, Destino = destino};
+            var reply = client.CheckRutaRequest(rutaRequest);
+
+            Console.WriteLine($"Ruta {reply.IsAccepted}");
+
+            return reply.IsAccepted;
             //Console.WriteLine("Press any key to exit...");
             //Console.ReadKey();
         }

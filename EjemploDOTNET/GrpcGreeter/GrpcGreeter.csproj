@@ -8,10 +8,12 @@
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\credit-rating-service.proto" GrpcServices="Server" />
     <Protobuf Include="Protos\validate-card-service.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\ruta-service.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

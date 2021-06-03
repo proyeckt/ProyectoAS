@@ -5,9 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Text;
 
 using Data;
-
-
 using Entities;
+
 
 namespace Models
 {
@@ -17,10 +16,18 @@ namespace Models
             {
                 // Creates the database if not exists
                 context.Database.EnsureCreated();
+
+
+                var pedidos = context.Pedidos;
+                var lista = pedidos.ToList<Pedido>();
+                pedido.PedidoID = lista.Count() + 1;
+                //usuario.ID = context.Usuarios.ToList<Producto>().Count() + 1;
                 context.Pedidos.Add(pedido);
 
                 // Saves changes
                 context.SaveChanges();
+
+
                 return true;
             }
         }

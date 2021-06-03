@@ -30,6 +30,7 @@ namespace EjemploASP.Controllers
             Console.WriteLine(json);
             //string str = JsonConvert.DeserializeObject<string>(json);
             List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(json);
+            
             //List<Producto> productos =  JsonSerializer.Deserialize<List<Producto>>(json);
             IProductoService productoService = new ProductoService();
             Producto producto = productoService.findProducto(nombre);
@@ -72,18 +73,42 @@ namespace EjemploASP.Controllers
                 ViewData["Costo"] = costo; 
                 return View ("Views/Productos/productos.cshtml",listaProductos); 
             }
+            
             Console.WriteLine(json);
 
             PedidoVirtual pedido = new PedidoVirtual();
             pedido.Precio = costo;
 
             List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(json);
-
+            
             ViewData["pedido"] = pedido;
             ViewData["productos"] =productos;
             PedidoVirtual p = new PedidoVirtual();
             p.Precio = costo;
             p.Productos = productos;
+            IProductoService ps = new ProductoService();
+            List<Producto> prods = ps.findProductos();
+            foreach(var pet in prods)
+            {   
+               int suma =0;
+               foreach(var peti in p.Productos)
+               {
+                   if (pet.Name == peti.Name)
+                   {
+                       suma++;
+                   }
+                   
+               } 
+               if (suma > pet.Cantidad)
+               {
+                   ViewBag.Message = "Los ítems sobrepasan la cantidad en stock";
+                
+                List<Producto> listaVacia = new List<Producto>();
+                ViewData["Cart"] = listaVacia;
+                ViewData["Costo"] = costo; 
+                return View ("Views/Productos/productos.cshtml",prods); 
+                }
+            }
             return View("Views/CheckOut/Billing.cshtml",p);
         }
 

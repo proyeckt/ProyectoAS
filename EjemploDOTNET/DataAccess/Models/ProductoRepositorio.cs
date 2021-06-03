@@ -31,9 +31,12 @@ namespace Models
             {
                 // Creates the database if not exists
                 context.Database.EnsureCreated();
-                context.Productos.Attach(producto);
+                Console.WriteLine("Repository "+producto.Cantidad);
+                //context.Productos.AddOrUpdate(producto);
 
-                // Saves changes
+                var p = context.Productos.First(prod => prod.ProductoID == producto.ProductoID);
+                p.Cantidad = producto.Cantidad;
+                
                 context.SaveChanges();
                 return producto;
             }
@@ -46,14 +49,36 @@ namespace Models
                 var products = context.Productos;
                 foreach (var prod in products.ToList())
                 {
+                    Console.WriteLine(id);
+                    Console.WriteLine(prod.ProductoID);
                     if(id.Equals(prod.ProductoID)){
-                        Console.WriteLine("True");
+                        Console.WriteLine("True findProducto");
                         return prod;
                     }
                     //if(string.Compare(email,user.Email)==0 && string.Compare(password,user.Password)==0)
                     
                 }
-                Console.WriteLine("False");
+                Console.WriteLine("False findProducto");
+                return null;
+            }
+        }
+
+        public Producto findProductoByName(string id){
+            using (var context = new UsuarioContext())
+            {
+                var products = context.Productos;
+                foreach (var prod in products.ToList())
+                {
+                    Console.WriteLine(id);
+                    Console.WriteLine(prod.Name);
+                    if(id.Equals(prod.Name)){
+                        Console.WriteLine("True findProducto");
+                        return prod;
+                    }
+                    //if(string.Compare(email,user.Email)==0 && string.Compare(password,user.Password)==0)
+                    
+                }
+                Console.WriteLine("False findProducto");
                 return null;
             }
         }

@@ -12,6 +12,11 @@ using Services.Contracts;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 using EjemploASP.Modelo;
+
+using System.Net;
+using System.IO;
+using System.Text;
+
 namespace EjemploASP.Controllers
 {
     [Route("billingController")]
@@ -71,7 +76,31 @@ namespace EjemploASP.Controllers
                 //------------------------------------------------------------------------
                 //Save in the database
                 //------------------------------------------------------------------------
-                return View ("Views/Validation/PedidoRealizado.cshtml");
+                IProductoService ps = new ProductoService();
+                
+                foreach (var p in pedido.Productos){
+                    Console.WriteLine("Foreach Name"+p.Name);
+                    Producto pr = ps.findProductoByName(p.Name);
+                    Console.WriteLine("forEach  "+p.Cantidad);
+                    if (pr != null)
+                        {pr.Cantidad = pr.Cantidad - 1;
+                        Producto pp = ps.updateProducto(pr);
+                    }
+
+                }
+                IPedidoService ps2 = new PedidoService();
+                Pedido pd = new Pedido();
+                pd.Valor = pedido.Precio;
+                pd.Fecha = DateTime.Now;
+                ps2.savePedido(pd);
+
+
+                ITiendaService ts = new TiendaService();
+                List<Tienda> tiendas = new List<Tienda>();
+                tiendas = ts.findTiendas();
+                ViewData["Tiendas"] = tiendas;
+
+                return View ("Views/CheckOut/Tiendas.cshtml",pedido);
             }
             else{
                 return View ("Views/Validation/ErrorTarjetaCredito.cshtml");
@@ -79,22 +108,18 @@ namespace EjemploASP.Controllers
         }
 
         
-        
-        [Route("Up")] 
-        public IActionResult Up(string json)
-        {
-            Console.WriteLine(json);
-            return View("Views/Login/Error.cshtml");
-        }
-        
 
         [Route("Next")] 
         [HttpPost]
         public IActionResult Next(PedidoVirtual pedido)
         {
+            
             //Console.WriteLine("JSON -- "+ jsonPedido);
             //PedidoVirtual pedido = JsonConvert.DeserializeObject<PedidoVirtual>(jsonPedido);
             //List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(jsonProductos);
+
+            
+            
             Console.WriteLine("pedido.TipoEntrega -- "+pedido.TipoEntrega);
             Console.WriteLine("pedido.MetodoPago -- "+pedido.MetodoPago);
             Console.WriteLine("pedido.Costo -- "+pedido.Precio);
@@ -115,8 +140,29 @@ namespace EjemploASP.Controllers
                 return View ("Views/CheckOut/Domicilio.cshtml",pedido);   
             }
             else 
-            {
-                return View ("Views/CheckOut/Recoger.cshtml",pedido);   
+            {   if (pedido.MetodoPago == "Tarjeta de credito")
+                    return View ("Views/CheckOut/Pay.cshtml",pedido);
+                else
+                {
+                    IProductoService ps = new ProductoService();
+                
+                    foreach (var p in pedido.Productos){
+                        Console.WriteLine("Foreach Name"+p.Name);
+                        Producto pr = ps.findProductoByName(p.Name);
+                        Console.WriteLine("forEach  "+p.Cantidad);
+                        if (pr != null)
+                            {pr.Cantidad = pr.Cantidad - 1;
+                            Producto pp = ps.updateProducto(pr);
+                        }
+
+                    }
+                    IPedidoService ps2 = new PedidoService();
+                    Pedido pd = new Pedido();
+                    pd.Valor = pedido.Precio;
+                    pd.Fecha = DateTime.Now;
+                    ps2.savePedido(pd);
+                    return View ("Views/CheckOut/FinalizarPedido.cshtml",pedido);
+                }
             }
         }
 
@@ -151,8 +197,14 @@ namespace EjemploASP.Controllers
         public IActionResult Domicilio(PedidoVirtual pedido)
         {
             Console.WriteLine(pedido.Direccion);
+            Console.WriteLine(pedido.Productos[0].ProductoID);
             Console.WriteLine("MetodoPago"+pedido.MetodoPago);
             Console.WriteLine("Precio"+pedido.Precio);
+
+            //------------------------------------------------------------------------- 
+            //string distancia = validarDistancia(pedido.Direccion);
+            
+            //-------------------------------------------------------------------------
             
             if (pedido.MetodoPago == "Tarjeta de credito")
             {
@@ -160,8 +212,74 @@ namespace EjemploASP.Controllers
             }
             else 
             {
-                return View("Views/CheckOut/ContraEntrega.cshtml",pedido);
+                IProductoService ps = new ProductoService();
+                
+                foreach (var p in pedido.Productos){
+                    Console.WriteLine("Foreach Name"+p.Name);
+                    Producto pr = ps.findProductoByName(p.Name);
+                    Console.WriteLine("forEach  "+p.Cantidad);
+                    if (pr != null)
+                        {pr.Cantidad = pr.Cantidad - 1;
+                        Producto pp = ps.updateProducto(pr);
+                    }
+
+                }
+                IPedidoService ps2 = new PedidoService();
+                Pedido pd = new Pedido();
+                pd.Valor = pedido.Precio;
+                pd.Fecha = DateTime.Now;
+                ps2.savePedido(pd);
+                return View("Views/CheckOut/FinalizarPedido.cshtml");
             }
+        }
+
+        /* public string validarDistancia (string direccion)
+        {
+            ITiendaService ts = new TiendaService();
+            List<Tienda> tiendas = new List<Tienda>();
+            tiendas = ts.findTiendas();
+            foreach(var i in tiendas)
+            {
+                var url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+direccion+"&destinations="+i.Direccion+"&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+                //var url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=75+9th+Ave+New+York,+NY&destinations=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+                WebRequest request = WebRequest.Create(url);
+                WebResponse response = request.GetResponse();
+                Stream data = response.GetResponseStream();
+                StreamReader reader = new StreamReader(data);
+                string responseFromServer = reader.ReadToEnd();
+                Console.WriteLine(responseFromServer);
+                RequestCepViewModel viewModel = JsonConvert.DeserializeObject<RequestCepViewModel>(responseFromServer);
+                Console.WriteLine("ViewModel: -- "+viewModel.rows[0].elements[0].distance.text);
+                Console.WriteLine("ViewModel: -- "+viewModel.rows[0].elements[0].distance.value);
+                response.Close();
+             }
+        } */
+
+        [Route("tiendaSeleccionada")]
+        [HttpPost]
+        public IActionResult tiendaSeleccionada(PedidoVirtual pedido)
+        {
+
+            Console.WriteLine(pedido.Direccion);
+            Console.WriteLine(pedido.DireccionTienda);
+            RemoteServices rs = new RemoteServices();
+            string respuesta = rs.serviceRuta(pedido.Direccion,pedido.DireccionTienda);
+            /*string url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+pedido.Direccion+"&destinations="+pedido.DireccionTienda+"&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+            //string url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+pedido.Direccion+"&destinations="+pedido.DireccionTienda+"&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+            Console.WriteLine(url);
+            //var url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=75+9th+Ave+New+York,+NY&destinations=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+            WebRequest request = WebRequest.Create(url);
+            WebResponse response = request.GetResponse();
+            Stream data = response.GetResponseStream();
+            StreamReader reader = new StreamReader(data);
+            string responseFromServer = reader.ReadToEnd();
+            Console.WriteLine(responseFromServer);
+            RequestCepViewModel viewModel = JsonConvert.DeserializeObject<RequestCepViewModel>(responseFromServer);
+            Console.WriteLine("ViewModel: -- "+viewModel.rows[0].elements[0].distance.text);
+            Console.WriteLine("ViewModel: -- "+viewModel.rows[0].elements[0].distance.value);
+            response.Close(); */
+            ViewData["distancia"] = respuesta;
+            return View ("Views/Validation/PedidoRealizado.cshtml");
         }
 
     }

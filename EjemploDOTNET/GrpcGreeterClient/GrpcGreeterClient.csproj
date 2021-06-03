@@ -17,6 +17,7 @@
     <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\credit-rating-service.proto" GrpcServices="Client" />
     <Protobuf Include="Protos\validate-card-service.proto" GrpcServices="Client" />
+    <Protobuf Include="Protos\ruta-service.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

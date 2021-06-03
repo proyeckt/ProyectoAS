@@ -253,24 +253,26 @@
     ]
   },
   "packageFolders": {
-    "/home/davidlopez/.nuget/packages/": {}
+    "C:\\Users\\dadav\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/GrpcGreeterClient/GrpcGreeterClient.csproj",
+      "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
       "projectName": "GrpcGreeterClient",
-      "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/GrpcGreeterClient/GrpcGreeterClient.csproj",
-      "packagesPath": "/home/davidlopez/.nuget/packages/",
-      "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/GrpcGreeterClient/obj/",
+      "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+      "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\GrpcGreeterClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/davidlopez/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -319,7 +321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

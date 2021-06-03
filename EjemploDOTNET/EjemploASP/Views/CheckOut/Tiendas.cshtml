@@ -1,0 +1,48 @@
+@using System.Web.Helpers
+@inject IJsonHelper Json;
+@model PedidoVirtual
+@{
+    ViewData["Title"] = "Productos";
+    Layout = null;
+    var tiendas = ViewData["Tiendas"] as List<Tienda>;
+    
+}
+
+@section Scripts {
+    <script src="~/js/jquery-1.10.2.min.js"></script>
+}
+
+@using (Html.BeginForm("tiendaSeleccionada", "billingController"))
+{
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Nuestras tiendas</title>
+        </head>
+    <body>
+        <h1>Nuestros tiendas</h1>
+        
+        <div class="row">
+            
+            @foreach(var item in @tiendas)
+            {
+                <span>
+                    Nombre tienda: @item.Nombre 
+                </span>
+                <br />
+                <span>
+                    Direccion: @item.Direccion 
+                </span>
+                @Html.RadioButtonFor(model => model.DireccionTienda, @item.Direccion )
+                @Html.HiddenFor(model => model.Direccion)
+                <br />
+                <br />
+            }
+        </div>
+
+         <p>
+            <input type="submit" value="PayBill" />
+        </p>
+    </body>
+    </html>
+}

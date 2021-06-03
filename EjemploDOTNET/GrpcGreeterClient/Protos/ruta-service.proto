@@ -1,0 +1,20 @@
+// Protos/ruta-service.proto
+
+syntax = "proto3";
+
+option csharp_namespace = "RutaService";
+
+package Ruta;
+
+service RutaCheck {
+  rpc CheckRutaRequest (RutaRequest) returns (RutaReply);
+}
+
+message RutaRequest {
+  string origen = 1;
+  string destino = 2;
+}
+
+message RutaReply {
+  string isAccepted = 1;
+}

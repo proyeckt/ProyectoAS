@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Spatial;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,19 @@ using Entities;
 using Services.Implementation;
 using Services.Contracts;
 using EjemploASP.Modelo;
+using System.Net;
+using System.IO;
+using System.Text;
+using Newtonsoft.Json;
+using System.Text.RegularExpressions;
+
+
+using GoogleApi.Entities.Common;
+using GoogleApi.Entities.Maps.Directions.Request;
+using GoogleApi.Entities.Maps.Directions.Response;
+
+//using GoogleSigned;
+
 namespace EjemploASP.Controllers
 {
     [Route("loginController")]
@@ -18,6 +32,29 @@ namespace EjemploASP.Controllers
 
         public LoginController(){
             usuario = new Usuario();
+        }
+
+
+        [Route("Registrarse")]
+        public IActionResult Registrarse()
+        {
+            return View ("Views/Login/Register.cshtml");
+        }
+
+        [Route("Register")]
+        [HttpPost]
+        public IActionResult Register(Usuario usuario)
+        {
+             if (usuario.Email != null && usuario.Password != null && usuario.Name != null)
+            {
+                Console.WriteLine("Email" + usuario.Email);
+                Console.WriteLine("Password" + usuario.Password);
+
+                IUsuarioService userService = new UsuarioService();
+                userService.register(usuario);
+                return View ("Views/Home/Index.cshtml");
+            }
+            return View ("Views");
         }
 
         [Route("login")]
@@ -38,15 +75,42 @@ namespace EjemploASP.Controllers
                     IProductoService productoService = new ProductoService();
                     List<Producto> listaProductos = new List<Producto>();
                     //CREA LOS PRODUCTOS EN LA BASE DE DATOS
-                    InitializeProducts(productoService);
+                    //InitializeProducts(productoService);
 
+// --------------------------------------------------------------------------------------------
+                    //string url = @"https://maps.googleapis.com/maps/api/directions/json?origin=75+9th+Ave+New+York,+NY&destination=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+                    var url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=75+9th+Ave+New+York,+NY&destinations=MetLife+Stadium+1+MetLife+Stadium+Dr+East+Rutherford,+NJ+07073&sensor=false&key=AIzaSyCPgGBVtdIdcO6tbwimh0fWnT6A3AgFtJ4";
+                    WebRequest request = WebRequest.Create(url);
 
+                    WebResponse response = request.GetResponse();
+
+                    Stream data = response.GetResponseStream();
+
+                    StreamReader reader = new StreamReader(data);
+
+                    // json-formatted string from maps api
+                    string responseFromServer = reader.ReadToEnd();
+
+                    Console.WriteLine(responseFromServer);
+
+                    RequestCepViewModel viewModel = JsonConvert.DeserializeObject<RequestCepViewModel>(responseFromServer);
+
+                    Console.WriteLine("ViewModel: -- "+viewModel.rows[0].elements[0].distance.text);
+
+                    response.Close();
+// --------------------------------------------------------------------------------------------
+                    ITiendaService ts = new TiendaService();
+                    List<Tienda> tiendas = new List<Tienda>();
+                    tiendas = ts.findTiendas();
+                    Console.WriteLine("SIZE TIENDAS: "+tiendas.Count());
+                    Console.WriteLine("");
+
+//---------------------------------------------------------------------------------------------
                     listaProductos = productoService.findProductos();
                     List<Producto> cart = new List<Producto>();
                     ViewData["Cart"] = cart;
                     ViewData["Costo"] = 0;
                     
-                    List<Producto> listaProductos=new List<Producto>();
                     return View("Views/Productos/Productos.cshtml",listaProductos);
                 }
             }

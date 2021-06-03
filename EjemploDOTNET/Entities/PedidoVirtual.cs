@@ -17,7 +17,7 @@ namespace Entities
         public string Direccion { get; set; }
         public List<Producto> Productos { get; set; }
         public Tarjeta Tarjeta { get; set; }
-        
+        public string DireccionTienda { get; set; }
 
         //public DateTime EnrollmentDate { get; set; }
         

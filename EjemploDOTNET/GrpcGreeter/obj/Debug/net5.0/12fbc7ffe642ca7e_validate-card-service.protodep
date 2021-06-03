@@ -1,0 +1,2 @@
+obj\Debug\net5.0\Protos/Validate-card-serviceGrpc.cs \
+obj\Debug\net5.0\Protos/ValidateCardService.cs: Protos/validate-card-service.proto
