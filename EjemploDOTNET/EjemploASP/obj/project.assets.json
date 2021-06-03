@@ -11,16 +11,50 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "Google.Protobuf/3.11.4": {
+      "Google.Protobuf/3.17.0": {
         "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.2"
-        },
         "compile": {
-          "lib/netstandard2.0/Google.Protobuf.dll": {}
+          "lib/net5.0/Google.Protobuf.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Google.Protobuf.dll": {}
+          "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc.Core.Api/2.37.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        }
+      },
+      "Grpc.Net.Client/2.37.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Net.Common": "2.37.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.0.3"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Client.dll": {}
+        }
+      },
+      "Grpc.Net.Common/2.37.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.37.0"
+        },
+        "compile": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Grpc.Net.Common.dll": {}
         }
       },
       "K4os.Compression.LZ4/1.1.11": {
@@ -580,6 +614,20 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "GrpcGreeterClient/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Google.Protobuf": "3.17.0",
+          "Grpc.Net.Client": "2.37.0"
+        },
+        "compile": {
+          "bin/placeholder/GrpcGreeterClient.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GrpcGreeterClient.dll": {}
+        }
+      },
       "Services.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -636,24 +684,89 @@
         "lib/xamarinios/BouncyCastle.Crypto.xml"
       ]
     },
-    "Google.Protobuf/3.11.4": {
-      "sha512": "dajCxjDCiPyZuqwZCkFJTwhn/0TJ5VesIs4fXvs56ez1VUi68JjhYMMsPjnJ9gcPqJwTMtXMU1WqUdXYiG1x4w==",
+    "Google.Protobuf/3.17.0": {
+      "sha512": "iyZfmz69cqbRRjtxfrMRFUPdXZHPKD6Nn33ABcfsE36YfEsG91s3UXBAYTuF7Mw8Y1VAd78gOyGRUQIjcQyaIw==",
       "type": "package",
-      "path": "google.protobuf/3.11.4",
+      "path": "google.protobuf/3.17.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "google.protobuf.3.11.4.nupkg.sha512",
+        "google.protobuf.3.17.0.nupkg.sha512",
         "google.protobuf.nuspec",
         "lib/net45/Google.Protobuf.dll",
         "lib/net45/Google.Protobuf.pdb",
         "lib/net45/Google.Protobuf.xml",
-        "lib/netstandard1.0/Google.Protobuf.dll",
-        "lib/netstandard1.0/Google.Protobuf.pdb",
-        "lib/netstandard1.0/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
         "lib/netstandard2.0/Google.Protobuf.dll",
         "lib/netstandard2.0/Google.Protobuf.pdb",
         "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc.Core.Api/2.37.0": {
+      "sha512": "ubqW2nTpiHyDudYGVXM+Vjh6WbgsI1fVQxsDK14/GnyPgiNMuNl8+GQcAYp5QPhAk5H4fjHJPI+KvbpVk8z6iQ==",
+      "type": "package",
+      "path": "grpc.core.api/2.37.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.core.api.2.37.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net45/Grpc.Core.Api.dll",
+        "lib/net45/Grpc.Core.Api.pdb",
+        "lib/net45/Grpc.Core.Api.xml",
+        "lib/netstandard1.5/Grpc.Core.Api.dll",
+        "lib/netstandard1.5/Grpc.Core.Api.pdb",
+        "lib/netstandard1.5/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
+    "Grpc.Net.Client/2.37.0": {
+      "sha512": "oMDNXAPkBzfXljv/ZzlZSf22TEstBNI6je85/c3iztlFbbixTMLgi0sIu/uHtEKoEWUPr0nmBMvD+jtqKorGTg==",
+      "type": "package",
+      "path": "grpc.net.client/2.37.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.client.2.37.0.nupkg.sha512",
+        "grpc.net.client.nuspec",
+        "lib/net5.0/Grpc.Net.Client.dll",
+        "lib/net5.0/Grpc.Net.Client.pdb",
+        "lib/net5.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.0/Grpc.Net.Client.dll",
+        "lib/netstandard2.0/Grpc.Net.Client.pdb",
+        "lib/netstandard2.0/Grpc.Net.Client.xml",
+        "lib/netstandard2.1/Grpc.Net.Client.dll",
+        "lib/netstandard2.1/Grpc.Net.Client.pdb",
+        "lib/netstandard2.1/Grpc.Net.Client.xml",
+        "packageIcon.png"
+      ]
+    },
+    "Grpc.Net.Common/2.37.0": {
+      "sha512": "V7fZb+87qB6Jio6uWXDHkxI9WT+y4EFwicAHkzB2lm/9wJazD0V35HhQjxvoONsldObaUimjqd4b/XZ0G07sDQ==",
+      "type": "package",
+      "path": "grpc.net.common/2.37.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.net.common.2.37.0.nupkg.sha512",
+        "grpc.net.common.nuspec",
+        "lib/net5.0/Grpc.Net.Common.dll",
+        "lib/net5.0/Grpc.Net.Common.pdb",
+        "lib/net5.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.0/Grpc.Net.Common.dll",
+        "lib/netstandard2.0/Grpc.Net.Common.pdb",
+        "lib/netstandard2.0/Grpc.Net.Common.xml",
+        "lib/netstandard2.1/Grpc.Net.Common.dll",
+        "lib/netstandard2.1/Grpc.Net.Common.pdb",
+        "lib/netstandard2.1/Grpc.Net.Common.xml",
+        "packageIcon.png"
       ]
     },
     "K4os.Compression.LZ4/1.1.11": {
@@ -1720,6 +1833,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "GrpcGreeterClient/1.0.0": {
+      "type": "project",
+      "path": "../GrpcGreeterClient/GrpcGreeterClient.csproj",
+      "msbuildProject": "../GrpcGreeterClient/GrpcGreeterClient.csproj"
+    },
     "Services.Contracts/1.0.0": {
       "type": "project",
       "path": "../Services.Contracts/Services.Contracts.csproj",
@@ -1734,6 +1852,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Entities >= 1.0.0",
+      "GrpcGreeterClient >= 1.0.0",
       "Microsoft.AspNet.WebPages >= 3.2.6",
       "Newtonsoft.Json >= 12.0.3",
       "Services.Implementation >= 1.0.0",
@@ -1741,37 +1860,38 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dadav\\.nuget\\packages\\": {}
+    "/home/davidlopez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj",
+      "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
       "projectName": "EjemploASP",
-      "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\EjemploASP.csproj",
-      "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\EjemploASP\\obj\\",
+      "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/EjemploASP.csproj",
+      "packagesPath": "/home/davidlopez/.nuget/packages/",
+      "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/EjemploASP/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/davidlopez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
+            "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+              "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
             },
-            "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj": {
-              "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Implementation\\Services.Implementation.csproj"
+            "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/GrpcGreeterClient/GrpcGreeterClient.csproj": {
+              "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/GrpcGreeterClient/GrpcGreeterClient.csproj"
+            },
+            "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj": {
+              "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Implementation/Services.Implementation.csproj"
             }
           }
         }
@@ -1817,7 +1937,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   },

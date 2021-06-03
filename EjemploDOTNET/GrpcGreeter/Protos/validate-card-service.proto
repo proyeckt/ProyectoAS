@@ -1,0 +1,21 @@
+// Protos/validate-card-service.proto
+
+syntax = "proto3";
+
+option csharp_namespace = "ValidateCardService";
+
+package Card;
+
+service ValidateCardCheck {
+  rpc CheckCardRequest (CardRequest) returns (CardReply);
+}
+
+message CardRequest {
+  string numCard = 1;
+  string dateExp = 2;
+  string cvv = 3;
+}
+
+message CardReply {
+  bool isAccepted = 1;
+}

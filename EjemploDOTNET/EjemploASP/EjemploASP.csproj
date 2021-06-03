@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Services.Implementation\Services.Implementation.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\GrpcGreeterClient\GrpcGreeterClient.csproj" />
   </ItemGroup>
 
   <ItemGroup>

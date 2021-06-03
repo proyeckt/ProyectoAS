@@ -27,34 +27,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dadav\\.nuget\\packages\\": {}
+    "/home/davidlopez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
+      "projectUniqueName": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
       "projectName": "Services.Contracts",
-      "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\Services.Contracts.csproj",
-      "packagesPath": "C:\\Users\\dadav\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Services.Contracts\\obj\\",
+      "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/Services.Contracts.csproj",
+      "packagesPath": "/home/davidlopez/.nuget/packages/",
+      "outputPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Services.Contracts/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/davidlopez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\dadav\\Desktop\\Arqui\\ProyectoAS\\EjemploDOTNET\\Entities\\Entities.csproj"
+            "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj": {
+              "projectPath": "/home/davidlopez/GitKraken/ProyectoAS/EjemploDOTNET/Entities/Entities.csproj"
             }
           }
         }
@@ -83,7 +81,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/128/sdk/5.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }

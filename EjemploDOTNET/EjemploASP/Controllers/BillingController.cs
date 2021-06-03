@@ -11,7 +11,7 @@ using Services.Implementation;
 using Services.Contracts;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
-
+using EjemploASP.Modelo;
 namespace EjemploASP.Controllers
 {
     [Route("billingController")]
@@ -61,7 +61,10 @@ namespace EjemploASP.Controllers
             {
                 return View ("Views/Validation/ErrorTarjeta.cshtml");
             }
-            bool validate = IsCreditCardInfoValid(tarjeta.NumeroTarjeta,tarjeta.FechaExpiracion,tarjeta.CVV );
+            RemoteServices rm = new RemoteServices();
+            bool validate=rm.serviceValidarTarjeta(tarjeta.NumeroTarjeta,tarjeta.FechaExpiracion,tarjeta.CVV);
+        
+            //bool validate = IsCreditCardInfoValid(tarjeta.NumeroTarjeta,tarjeta.FechaExpiracion,tarjeta.CVV );
             
             if (validate){
                 

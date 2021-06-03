@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using Entities;
 using Services.Implementation;
 using Services.Contracts;
-
+using EjemploASP.Modelo;
 namespace EjemploASP.Controllers
 {
     [Route("loginController")]
@@ -33,7 +33,9 @@ namespace EjemploASP.Controllers
                 bool loginBool = userService.validarUsuario(usuario.Email,usuario.Password);
                 if (loginBool)
                 {
-                    IProductoService productoService = new ProductoService();
+                    //RemoteServices rm=new RemoteServices();
+                    //rm.service1();
+                    /*IProductoService productoService = new ProductoService();
                     List<Producto> listaProductos = new List<Producto>();
                     //CREA LOS PRODUCTOS EN LA BASE DE DATOS
                     //InitializeProducts(productoService);
@@ -43,6 +45,8 @@ namespace EjemploASP.Controllers
                     List<Producto> cart = new List<Producto>();
                     ViewData["Cart"] = cart;
                     ViewData["Costo"] = 0;
+                    */
+                    List<Producto> listaProductos=new List<Producto>();
                     return View("Views/Productos/Productos.cshtml",listaProductos);
                 }
             }

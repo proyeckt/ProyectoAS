@@ -18,7 +18,7 @@ namespace Data
         public DbSet<Pedido> Pedidos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-        optionsBuilder.UseMySQL("server=localhost;database=proyectoas;user=takina;password=password");
+        optionsBuilder.UseMySQL("server=localhost;database=ProyectoAS;user=takina;password=password");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

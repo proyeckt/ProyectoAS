@@ -26,6 +26,20 @@ namespace Models
             }
         }
 
+        public Producto updateProducto(Producto producto){
+            using (var context = new UsuarioContext())
+            {
+                // Creates the database if not exists
+                context.Database.EnsureCreated();
+                context.Productos.Attach(producto);
+
+                // Saves changes
+                context.SaveChanges();
+                return producto;
+            }
+            return null;
+        }
+
         public Producto findProducto(int id){
             using (var context = new UsuarioContext())
             {
